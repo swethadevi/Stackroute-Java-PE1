@@ -11,25 +11,23 @@ import java.util.*;
 
 public class Question7_AcceptNumber
 {
+
     public static void main(String[] args) {
-
-        check_acceptnum();
-
+        // acceptSort();
+        System.out.println(acceptSort("54637365"));
     }
 
-    public static void check_acceptnum(){
-        
-        System.out.println("Enter a Input");
-        String number, str2="";
-        Scanner sc = new Scanner(System.in);
-        number = sc.next();
-        System.out.println("The given Number is \n "+number);
+    public static String acceptSort(String number){
 
-
+        //System.out.println("Enter a Input");
+        //String number;
+        String str2="";
+        //Scanner sc = new Scanner(System.in);
+        //number = sc.next();
+        //System.out.println("The given Number is \n "+number);
         char tempArray[] = number.toCharArray();  // convert input string to char array
         Arrays.sort(tempArray);  // sort tempArray
-        System.out.println(tempArray);
-
+        //System.out.println(tempArray);
 
 
         //To loop through the given input string and reverse
@@ -38,10 +36,9 @@ public class Question7_AcceptNumber
             //Appending the characters to Reverse_String
             str2 += tempArray[i];
         }
-
-        System.out.println("The number in Descending order is \n"+ str2);
-
-
-
+        //System.out.println("The number in Descending order is \n"+ str2);
+        return str2;
     }
+
+
 }

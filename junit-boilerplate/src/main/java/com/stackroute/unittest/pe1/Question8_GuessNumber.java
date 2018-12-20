@@ -16,14 +16,14 @@ public class Question8_GuessNumber
     public static String check_guessnum(int number,int limit) {
         if(number>limit)
         {
-            System.out.println("Guessed Number is more than Original Number");
+            //System.out.println("Guessed Number is more than Original Number");
             return "Guessed Number is more than Original Number";
 
         }
         //condition to check if the number is lesser than the original number
         else if(number<limit)
         {
-            System.out.println("Guessed Number is leser than than the Original Number");
+            //System.out.println("Guessed Number is leser than than the Original Number");
             return "Guessed Number is leser than than the Original Number";
         }
 
